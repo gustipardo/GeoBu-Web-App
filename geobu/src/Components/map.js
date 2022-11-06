@@ -3,8 +3,8 @@ import "../style_sheets/map.css";
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: '400px',
-  height: '400px'
+  height: '100vh',
+  width: '100%  '
 };
 
 const center = {
@@ -12,13 +12,13 @@ const center = {
   lng: -58.7026321
 };
 
-function MyComponent() {
+function MyMap() {
   return (
-    <div className="map">
-    <LoadScript className="map"
+    <div>
+    <LoadScript
       googleMapsApiKey="AIzaSyCOBJTKTOghryGe0rk1pO7JVnlaoWu029Y"
     >
-      <GoogleMap className="map"
+      <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
         zoom={13}
@@ -31,4 +31,4 @@ function MyComponent() {
   )
 }
 
-export default React.memo(MyComponent)
+export default React.memo(MyMap)
