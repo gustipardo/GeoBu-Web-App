@@ -1,0 +1,36 @@
+
+.boton_ubicar {
+    position:absolute;
+    height:100px;
+    width:100px;
+    bottom:50px;
+    right:25px; 
+
+}
+
+.boton_ubicar_persona {
+    position:absolute;
+    height:100px;
+    width:100px;
+    bottom: 160px;
+    right: 25px;
+}
+
+@media all and (max-width: 5px) {
+    .boton_ubicar {
+        position:absolute;
+        height: 10px;
+        width:10px;
+        bottom:0px; 
+        right:0px; 
+    
+    }
+    
+    .boton_ubicar_persona {
+        position:absolute;
+        height:10px;
+        width:10px;
+        bottom: 0px;
+        right: 0px;
+    }
+}
